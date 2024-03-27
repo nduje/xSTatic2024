@@ -6,17 +6,18 @@ import "./globals.css";
 // Get this info from some external source (e.g. CMS)
 const pages = {
   home: "/",
-  showcase: "/showcase",
-  blog: "/blog",
   about: "/about",
+  blog: "/blog",
+  gallery: "/gallery",
+  category: "/category",
   contact: "/contact",
 };
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Next.js lab project",
-  description: "Next.js lab project",
+  title: "xSTatic",
+  description: "xSTatic graffiti jam festival",
 };
 
 export default function RootLayout({
@@ -28,7 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <nav className="flex items-center justify-center p-4">
-          <ul className="flex gap-8">
+          <ul className="flex uppercase gap-8">
             {Object.entries(pages).map(([name, path]) => (
               <li key={name}>
                 <Link href={path}>{name}</Link>

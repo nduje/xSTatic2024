@@ -1,7 +1,7 @@
-export default function Showcase() {
+export default function Gallery() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-10">
-      <h1 className="text-3xl font-bold">Showcase Page</h1>
+      <h1 className="text-3xl font-bold">Gallery Page</h1>
     </main>
   );
 }
